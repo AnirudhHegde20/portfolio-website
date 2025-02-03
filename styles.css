@@ -1,0 +1,116 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin-bottom: 10px;
+    font-size: 2em;
+  }
+  
+  /* Navigation */
+  nav {
+    background: #e8491d;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Main Sections */
+  section {
+    margin: 20px 0;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  section h2 {
+    margin-bottom: 15px;
+    color: #35424a;
+  }
+  
+  /* Image Styling */
+  section img {
+    max-width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+  
+  /* Article Styling */
+  article {
+    margin-bottom: 20px;
+  }
+  
+  article h3 {
+    color: #e8491d;
+    margin-bottom: 10px;
+  }
+  
+  article h4 {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #555;
+  }
+  
+  /* Lists */
+  ul {
+    margin: 10px 0 10px 20px;
+  }
+  
+  /* Links */
+  a {
+    color: #e8491d;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
