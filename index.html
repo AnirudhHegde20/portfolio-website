@@ -3,137 +3,161 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anirudh Hegde Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <!-- Optional: Import a Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>Anirudh Hegde - Data Scientist Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Chart.js for skill visualization -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- AOS CSS for scroll animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body>
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <h1>Hey there👋 I’m Anirudh Hegde!</h1>
-      <p>Data Analytics Graduate Student | Machine Learning Enthusiast</p>
-    </div>
-  </header>
-
+<body class="bg-gray-900 text-gray-200">
   <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <nav class="bg-gray-800 shadow fixed w-full z-10">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-white">Anirudh Hegde</a>
+      <div class="space-x-4">
+        <a href="#about" class="hover:text-blue-400">About</a>
+        <a href="#skills" class="hover:text-blue-400">Skills</a>
+        <a href="#experience" class="hover:text-blue-400">Experience</a>
+        <a href="#projects" class="hover:text-blue-400">Projects</a>
+        <a href="#contact" class="hover:text-blue-400">Contact</a>
+      </div>
+    </div>
   </nav>
 
+  <!-- Hero Section -->
+  <section id="hero" class="h-screen flex items-center justify-center bg-gradient-to-r from-indigo-950 to-gray-900 pt-16">
+    <div class="text-center">
+      <img src="your-photo.jpg" alt="Anirudh Hegde" class="w-48 h-48 rounded-full mx-auto mb-6 object-cover border-4 border-blue-600 animate-pulse" />
+      <h1 class="text-5xl font-bold mb-4 text-white">Hi, I’m Anirudh Hegde</h1>
+      <p class="text-xl mb-6 text-gray-300">Data Scientist | MLOps Enthusiast | NLP & Predictive Analytics</p>
+      <a href="#projects" class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-500 transition">View Projects</a>
+    </div>
+  </section>
+
   <!-- Main Content -->
-  <main class="container">
-    
-    <!-- About Me Section -->
-    <section id="about">
-      <h2>About Me</h2>
-      <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/f0b8d4af-65aa-4bb1-9cb0-054b494ab3af/73c32768-0443-44ca-b82f-4ef70c654f89/f8d3ed05-ea46-42b3-a3dd-72eaac37ba97.png" alt="Anirudh Hegde" />
-      <p>
-        I am passionate about leveraging data to uncover actionable insights and solve real-world problems.
-        My academic and professional journey has enabled me to specialize in <strong>Natural Language Processing</strong>,
-        <strong>Predictive Analytics</strong>, and <strong>MLOps</strong>.
-      </p>
-      <h3>Education</h3>
-      <ul>
-        <li>🎓 <strong>Master of Science in Data Analytics Engineering</strong> (Northeastern University, May 2025)</li>
-        <li>🎓 <strong>Bachelor of Technology in Mechanical and Automation Engineering</strong> (Guru Gobind Singh Indraprastha University, September 2020)</li>
-      </ul>
+  <main class="container mx-auto px-6 py-16 space-y-24">
+    <!-- About Me -->
+    <section id="about" class="flex flex-col md:flex-row items-center md:space-x-8" data-aos="fade-right">
+      <img src="your-photo.jpg" alt="Anirudh Hegde" class="w-48 h-48 rounded-full mb-6 md:mb-0 object-cover border-2 border-blue-400" />
+      <div>
+        <h2 class="text-3xl font-bold mb-4 text-white">About Me</h2>
+        <p class="mb-4 text-gray-300">
+          I’m passionate about leveraging data to uncover actionable insights and solve real-world problems. My expertise spans Natural Language Processing, Predictive Analytics, and MLOps.
+        </p>
+        <ul class="list-disc list-inside text-gray-300">
+          <li><strong>Education:</strong> MS in Data Analytics Engineering, Northeastern University</li>
+          <li><strong>B.Tech:</strong> Mechanical & Automation Engineering, GGSIPU</li>
+        </ul>
+      </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-      <h2>Experience</h2>
-      <article>
-        <h3>Assistant Manager - Data Analytics</h3>
-        <h4>Maruti Suzuki India Limited | June 2022 – July 2023</h4>
-        <ul>
-          <li>Led EDA using Python and SQL on data from 8 powertrains and 240+ car models to guide strategic decisions.</li>
-          <li>Utilized sales and carbon emission data to predict and recommend future vehicle technologies, projecting a 10% reduction in carbon emissions by 2027.</li>
-          <li>Built an automated Tableau dashboard to track sales, trends, and carbon emissions for real-time insights.</li>
-          <li>Collaborated with cross-functional teams to optimize powertrain planning and forecasting.</li>
-          <li>Segmented customers using K-Means clustering to enhance powertrain design for various driving patterns.</li>
-        </ul>
-      </article>
-      <article>
-        <h3>Assistant Manager - Project Analytics</h3>
-        <h4>Godrej & Boyce Mfg Co Ltd | Jan 2021 – June 2022</h4>
-        <ul>
-          <li>Conducted advanced data analysis using Python and SQL to uncover trends, improving project delivery time by 25%.</li>
-          <li>Boosted operational efficiency by 20% across 5 supply chain projects through workflow optimization.</li>
-          <li>Streamlined processes by implementing Agile methodologies to enhance responsiveness.</li>
-          <li>Led six cross-functional teams, reducing delivery time and increasing client satisfaction by 15%.</li>
-          <li>Created detailed reports to help senior leadership spot issues early and make informed decisions.</li>
-        </ul>
-      </article>
+    <!-- Skills -->
+    <section id="skills" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-8 text-center text-white">Skills</h2>
+      <!-- Skill Chart Container -->
+      <div class="bg-gray-800 p-6 rounded-lg mx-auto max-w-md shadow-inner">
+        <canvas id="skillsChart" width="400" height="400"></canvas>
+      </div>
     </section>
 
-    
-    <!-- Projects Section -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <article>
-        <h3>Automated BiLingual Complaint System</h3>
-        <p><strong>Overview:</strong> Built an MLOps pipeline to classify multilingual customer complaints using mBERT/XLM-RoBERTa models.</p>
-        <p><strong>Technologies:</strong> Python, TensorFlow, GCP, Airflow</p>
-        <p><strong>Key Results:</strong></p>
-        <ul>
-          <li>Improved classification efficiency with an F1 score of 69%.</li>
-          <li>Implemented real-time monitoring for data drift and bias detection.</li>
-        </ul>
-        <p><a href="https://github.com/AnirudhHegde20/Automated-BiLingual-Complaint-System" target="_blank">View on GitHub</a></p>
-      </article>
-      <article>
-        <h3>RAG-Based Multilingual News Retrieval System</h3>
-        <p><strong>Overview:</strong> Developed a system to retrieve, translate, and summarize multilingual news articles.</p>
-        <p><strong>Technologies:</strong> MBART50, T5, FAISS, Streamlit</p>
-        <p><strong>Key Results:</strong></p>
-        <ul>
-          <li>Achieved a BLEU Score of 0.72 and a BERTScore of 0.85.</li>
-        </ul>
-        <p><a href="https://github.com/AnirudhHegde20/RAG-Based-Multilingual-News-Retrieval" target="_blank">View on GitHub</a></p>
-      </article>
-      <article>
-        <h3>Telco Customer Churn Prediction</h3>
-        <p><strong>Overview:</strong> Developed a machine learning model to identify and retain customers at high risk of churning.</p>
-        <p><strong>Technologies:</strong> TensorFlow, XGBoost, Matplotlib</p>
-        <p><strong>Key Results:</strong></p>
-        <ul>
-          <li>Achieved a 5% increase in churn prediction accuracy.</li>
-          <li>Created data visualizations to support strategic customer retention initiatives.</li>
-        </ul>
-        <p><a href="https://github.com/AnirudhHegde20/Telco-Customer-Churn" target="_blank">View on GitHub</a></p>
-      </article>
+    <!-- Experience -->
+    <section id="experience" data-aos="fade-left">
+      <h2 class="text-3xl font-bold mb-8 text-center text-white">Experience</h2>
+      <div class="space-y-12">
+        <div>
+          <h3 class="text-2xl font-semibold text-blue-400">Assistant Manager - Data Analytics</h3>
+          <p class="italic text-gray-400">Maruti Suzuki India Limited | Jun 2022 – Jul 2023</p>
+          <ul class="list-disc list-inside mt-4 space-y-2 text-gray-300">
+            <li>Forecasted powertrain adoption trends with 85% accuracy using Python (scikit-learn), projecting 10% carbon emission reduction.</li>
+            <li>Developed interactive Tableau dashboards, reducing report prep time by 40%.</li>
+            <li>Executed A/B tests to measure feature enhancements and NPS improvements, securing $1M in investment.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold text-blue-400">Assistant Manager - Project Analytics</h3>
+          <p class="italic text-gray-400">Godrej & Boyce Mfg Co Ltd | Jan 2021 – Jun 2022</p>
+          <ul class="list-disc list-inside mt-4 space-y-2 text-gray-300">
+            <li>Automated ETL pipelines using Python & SQL, boosting operational efficiency by 20%.</li>
+            <li>Implemented ARIMA and Prophet models to predict inventory demand, reducing stockouts by 22%.</li>
+            <li>Led stakeholder sessions, accelerating project delivery by 25%.</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications">
-      <h2>Certifications</h2>
-      <ul>
-        <li><strong>Deep Learning Specialization</strong> (Coursera)</li>
-        <li><strong>Advanced SQL Certification</strong> (HackerRank)</li>
-        <li><strong>Machine Learning Specialization</strong> (Coursera)</li>
-      </ul>
+    <!-- Projects -->
+    <section id="projects" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-8 text-center text-white">Projects</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-lg transform hover:scale-105 transition" data-aos="zoom-in">
+          <h4 class="text-xl font-semibold mb-2 text-blue-300">Project Title</h4>
+          <p class="text-gray-400 mb-4">Tech Stack: Python, FastAPI, Docker</p>
+          <ul class="list-disc list-inside space-y-1 mb-4 text-gray-300">
+            <li>Brief description of what you built.</li>
+            <li>Outcome or impact of the project.</li>
+          </ul>
+          <a href="#" class="text-blue-400 hover:underline">View on GitHub</a>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>📧 <strong>Email:</strong> <a href="mailto:hegde.anir@northeastern.edu">hegde.anir@northeastern.edu</a></p>
-      <p>👤 <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anirudhhegde1997/" target="_blank">linkedin.com/in/anirudhhegde1997</a></p>
-      <p>👨‍💻 <strong>GitHub:</strong> <a href="https://github.com/AnirudhHegde20" target="_blank">github.com/AnirudhHegde20</a></p>
+    <!-- Contact -->
+    <section id="contact" class="text-center" data-aos="fade-up">
+      <h2 class="text-3xl font-bold mb-4 text-white">Get In Touch</h2>
+      <p class="mb-4 text-gray-300">I’m currently open to full-time Data Scientist roles. Feel free to reach out!</p>
+      <div class="space-x-4">
+        <a href="mailto:hegde.anir@northeastern.edu" class="hover:text-blue-400">Email</a>
+        <a href="https://www.linkedin.com/in/anirudhhegde1997/" target="_blank" class="hover:text-blue-400">LinkedIn</a>
+        <a href="https://github.com/AnirudhHegde20" target="_blank" class="hover:text-blue-400">GitHub</a>
+      </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer>
-    <p>© 2024 Anirudh Hegde</p>
+  <footer class="bg-gray-800 text-center py-4 mt-16 shadow-inner">
+    <p class="text-gray-500">© 2025 Anirudh Hegde</p>
   </footer>
+
+  <!-- AOS & Chart Initialization -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+
+    // Skills Chart
+    (function() {
+      const skillsCtx = document.getElementById('skillsChart').getContext('2d');
+      new Chart(skillsCtx, {
+        type: 'radar',
+        data: {
+          labels: ['Python', 'SQL', 'Tableau', 'Machine Learning', 'NLP', 'Cloud'],
+          datasets: [{
+            label: 'Proficiency (%)',
+            data: [90, 85, 80, 75, 70, 70],
+            backgroundColor: 'rgba(59, 130, 246, 0.2)',
+            borderColor: 'rgba(59, 130, 246, 1)',
+            borderWidth: 2,
+            pointBackgroundColor: 'rgba(59, 130, 246, 1)'
+          }]
+        },
+        options: {
+          scales: {
+            r: {
+              beginAtZero: true,
+              max: 100,
+              grid: { color: 'rgba(255,255,255,0.2)' },
+              angleLines: { color: 'rgba(255,255,255,0.2)' },
+              pointLabels: { color: '#fff', font: { size: 14 } }
+            }
+          },
+          plugins: {
+            legend: { labels: { color: '#fff' } },
+            tooltip: { bodyColor: '#fff', titleColor: '#fff' }
+          }
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
